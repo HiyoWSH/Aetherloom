@@ -76,15 +76,23 @@ Adjacent steps under five are hard to tell apart. Multiples of five are enough.
 | Folder | Holds | Files |
 |---|---|---|
 | `weaves/patterns/` | text weaves, three columns to a stitch | `.txt` |
-| `weaves/pulse-patterns/` | pulse weaves | `.pulse` |
+| `weaves/pulse-patterns/` | pulse weaves, single files or whole packs | `.pulse`, `.zip` |
 
-The two kinds are written separately and do not share a format. The pulse folder
-is still empty.
+The two kinds are written separately and do not share a format. A pack comes in as
+`.zip`, named after the single file it holds.
 
 ### Text weaves
 
 | Weave | Length | What it records |
 |---|---|---|
 | [三度潮汐.txt](weaves/patterns/三度潮汐.txt) | 53 min | three rises, peaks at 44 / 58 / 70; the closing stretch ebbs back to dry |
+| [夜雨独阵.txt](weaves/patterns/夜雨独阵.txt) | 45 min | a plateau of 6–31 with one shower to 62; the closing stretch eases back to dry |
+
+### Pulse weaves
+
+| Weave | Form | What it records |
+|---|---|---|
+| [三度潮汐-波形.zip](weaves/pulse-patterns/三度潮汐-波形.zip) | pack | waveforms for the weave above, six parts |
+| [夜雨独阵-波形.zip](weaves/pulse-patterns/夜雨独阵-波形.zip) | pack | waveforms for the weave above, six parts |
 
 The weaves are given to the commons; no permission asked, none needed.
