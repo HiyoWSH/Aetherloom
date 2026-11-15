@@ -1,0 +1,28 @@
+Data license
+============
+
+Scope
+-----
+All files under `patterns/` and every `.txt` pattern file added to this
+repository in the future.
+
+License
+-------
+SPDX-License-Identifier: CC0-1.0
+
+The pattern files are dedicated to the public domain under the Creative Commons
+CC0 1.0 Universal Public Domain Dedication.
+
+Full legal code:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Human-readable summary:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+No rights reserved. You may copy, modify, distribute and use these files,
+including commercially, without asking permission and without attribution.
+
+Note
+----
+CC0 is used for the pattern data only. The code in `tools/` is licensed under
+the MIT License; see `LICENSE`.

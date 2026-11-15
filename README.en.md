@@ -4,12 +4,13 @@
 
 [中文](README.md) | English
 
-What lives here are its weaves: plain-text files that say, stitch by stitch,
-*when*, *which motif*, and *how deep the water*.
+What lives here are its weaves: files that say, stitch by stitch, *when*, *which
+motif*, and *how deep the water*.
 
 ## A weave
 
-One stitch per line, three things, divided by a bar:
+The `.txt` files under `weaves/patterns/` hold one stitch per line, three things,
+divided by a bar:
 
 ```
 tick|motif|amplitude
@@ -35,7 +36,7 @@ Five laws of the stitch:
 
 - All three must be present. Miss one and the stitch is void.
 - No two stitches closer than 0.5 s. Denser ones are swallowed by the throttle.
-- Ticks should climb. Two stitches at the same moment: only the later is heard.
+- Ticks should climb. Two stitches at the same moment: only the later one counts.
 - A whole line beginning with `#` is a margin note. It may not trail a stitch.
 - The last stitch returns amplitude to zero, or the loom holds its final state.
 
@@ -44,15 +45,15 @@ Five laws of the stitch:
 | No. | Motif | Shape | Suited to |
 |---|---|---|---|
 | 1 | Still stream | flat and continuous, lightest of three | groundwork, closing, long low passages |
-| 2 | Steady stream | same waveform as Still, middle gain | the working body of a weave |
-| 3 | Rushing stream | same waveform as Still, full gain | surges, bursts |
-| 4 | Sparse rain | short touches, clear gaps | beats, crisp rhythm |
-| 5 | Ebb | a run of pulses, each weaker than the last | from fast to slow, gathering up |
+| 2 | Steady stream | same waveform as Still, middle gain | the middle stretch of a weave |
+| 3 | Rushing stream | same waveform as Still, full gain | the crest, full water |
+| 4 | Sparse rain | short pulses, wide gaps | beats, crisp rhythm |
+| 5 | Ebb | a run of pulses, each weaker than the last | from fast to slow, drawing in |
 | 6 | Reflux | speeds and slows on its own, longest cycle | turns, shifting tempo |
 | 7 | Downpour | dense short pulses, merged into one sheet | the chorus of a hard rhythm |
 | 8 | Climbing vine | amplitude steps upward, level by level | swells, ascents |
 | 9 | Breath | one long, one short, alternating | contrast, held silence |
-| 10 | Beads | short hits chained into a single run | dense runs, just before the strike |
+| 10 | Beads | short pulses chained into a single run | dense runs, just before the crest |
 
 Still, Steady and Rushing are one waveform at three built-in depths. To keep the
 texture and change only the level, hold the motif and move the amplitude; walking
@@ -64,10 +65,26 @@ texture and change only the level, hold the motif and move the amplitude; walkin
 |---|---|---|
 | `0` | dry | opening, closing a passage, the end |
 | `1`–`20` | trickle | groundwork, pauses |
-| `21`–`50` | ripple | the working body of a weave |
+| `21`–`50` | ripple | the middle stretch of a weave |
 | `51`–`80` | surge | chorus, approach to the peak |
-| `81`–`100` | boil | the peak, the strike |
+| `81`–`100` | boil | the peak, the crest |
+
+Adjacent steps under five are hard to tell apart. Multiples of five are enough.
 
 ## The weaves
 
-The weaves are given to the commons. Take them without asking.
+| Folder | Holds | Files |
+|---|---|---|
+| `weaves/patterns/` | text weaves, three columns to a stitch | `.txt` |
+| `weaves/pulse-patterns/` | pulse weaves | `.pulse` |
+
+The two kinds are written separately and do not share a format. The pulse folder
+is still empty.
+
+### Text weaves
+
+| Weave | Length | What it records |
+|---|---|---|
+| [三度潮汐.txt](weaves/patterns/三度潮汐.txt) | 53 min | three rises, peaks at 44 / 58 / 70; the closing stretch ebbs back to dry |
+
+The weaves are given to the commons; no permission asked, none needed.
